@@ -1,0 +1,102 @@
+:root {
+    --darkGray: #202024;
+    --lightGray: #d3d3d3;
+    --purple: #8257E5;
+    --mediumGray: #a1a1a1;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+    font-size: 17px;
+    
+}
+
+body {
+    width: 100%;
+    min-height: 100vh; 
+    background-color: var(--lightGray);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    background-image: url('img/backgroundimage.png');
+    background-repeat: no-repeat;
+    background-position-x: right;
+    background-position-y: bottom;       
+}
+h1 {
+    font-size: 32px;
+    padding-bottom: 10px;
+    color: var(--lightGray)   
+}
+
+#app {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: var(--darkGray);
+    width: 30%;
+    height: 30%;
+    padding: 1.3rem 0;
+    margin-top: 200px;
+    border: 2px solid var(--lightGray);
+    border-radius: 5px;
+}
+
+button {
+    background-color: var(--purple);
+    width: 25%;
+    border: none;
+    margin: 3px;
+}
+
+button:hover {
+    background-color: var(--mediumGray);
+}
+
+input {
+    border: none;
+    align-items: center;
+    margin-bottom: 5px;
+    text-align: center;
+    color: var(--lightGray);
+    background-color: var(--darkGray)
+}
+.theme {
+    margin: 3px;
+    border: none;
+    
+}
+
+@media (max-width: 650px) {
+    * {
+        font-size: 15px;
+    }
+    body {
+        background-position: center;
+    }
+    h1 {
+        font-size: 29px;
+    }
+    #app {  
+        width: 50%;
+        height: 20%;
+        
+    }
+    button {   
+        width: 35%;   
+    }
+}
+
+
+
+
+
+
+
