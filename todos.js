@@ -2,6 +2,7 @@ var listElement = document.querySelector('#app ul');
 var inputElement = document.querySelector('#app input');
 var buttonElement = document.querySelector('#app button');
 
+
 var todos = JSON.parse(localStorage.getItem('list_todos')) || [];
 
 function renderTodos() {
@@ -10,6 +11,7 @@ function renderTodos() {
     for (todo of todos) {
         var todoElement = document.createElement('li');
         var todoText = document.createTextNode(todo);
+        
 
         var linkElement = document.createElement('a');
 
@@ -41,7 +43,7 @@ function addTodo() {
 
 }
 
-todoText.style.color = "#d3d3d3";
+
 
 buttonElement.onclick = addTodo;
 
